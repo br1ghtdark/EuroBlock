@@ -1,0 +1,173 @@
+@import "reset";
+@import "fonts";
+@import "mixin";
+
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 960px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* ===============================HEADER============================== */
+/* ===============================HEADER============================== */
+
+.header {
+    background-color: #ffffff;
+
+    &__inner {
+        display: flex;
+        height: 137px;
+        align-items: center;
+
+        &-logo {
+            margin-right: 33px;
+        }
+
+        &-txt {
+            margin-right: 132px;
+        }
+
+        &-content {
+            margin-right: 40px;
+        }
+    }
+
+    &__txt {
+        @include style_small-p ($fz: 14px, $fw: 400, $lh: 20px);
+    }
+
+    &__content {
+
+        &-number {
+            @include style_h3 ($fz: 24px, $fw: 700, $lh: 24px);
+            margin-bottom: 8px;
+        }
+
+        &-clock {
+            @include style_small-p ($fz: 14px, $fw: 400, $lh: 20px);
+            padding-left: 7px;
+        }
+    }
+
+    &__btn {
+        @include style_btn;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &-img {
+            margin-right: 8px;
+        }
+
+        &-txt {
+            @include style_txt-btn;
+        }
+    }
+}
+
+/* ===============================SALE============================== */
+/* ===============================SALE============================== */
+
+.sale {
+    background: linear-gradient(to top, rgba(0, 147, 221, 0.6)), 
+    0px 0px / cover no-repeat url("/images/head_background.png");
+    clip-path: polygon(0% 0%, 100% 0, 100% 85%, 0 100%);
+    &__inner {
+        padding-bottom: 150px;
+
+        &-title {
+            position: relative;
+            padding-top: 80px;
+            display: flex;
+        }
+
+        &-meta {
+            @include style_small-p ($fz: 20px, $fw: 400, $lh: 20px);
+            display: flex;
+            color: #ffffff;
+            padding-left: 43px;
+            padding-top: 50px;
+            padding-bottom: 70px;
+            padding:  50px 0 70px 43px;
+            justify-content: space-between;
+        }
+
+        &-more {
+            display: flex;
+            padding-bottom: 75px;
+        }
+
+        &-txt {
+            display: flex;
+            @include style_small-p ($fz: 18px, $fw: 400, $lh: 20px);
+            color: #ffffff;
+            justify-content: center;
+        }
+    }
+
+    &__title {
+        @include style_h1 ($fz: 48px, $fw: 900, $lh: 64px);
+        width: 590px;
+
+        &-img {
+            position: absolute;
+            right: -40px;
+        }
+    }
+
+    &__meta {
+        position: relative;
+        &::before {
+            content: url('/images/icons/check.png');
+            position: absolute;
+            left: -40px;
+        }
+    }
+
+    &__more {
+        position: relative;
+        display: flex;
+
+        &-img {
+            position: absolute;
+        }
+
+        &-txt {
+            @include style_small-p ($fz: 14px, $fw: 700, $lh: auto);;
+            color: #ffffff;
+            width: 215px;
+            padding: 15px 0 0 0px;
+            text-align: right;
+        }
+
+        &-title {
+            @include style_h3 ($fz: 28px, $fw: 700, $lh: auto);
+            color: #fff000;
+            padding: 22px 0 0 30px;
+        }
+
+        &-btn {
+            margin-left: 100px;
+        }
+    }
+
+    &__btn {
+        @include style_btn-yellow;
+
+        & p {
+            @include style_txt-btn ($fz: 18.6px, $fw: 700, $lh: auto);
+            color: #010101;
+        }
+    }
+
+    &__txt {
+        margin-right: 31px;
+    }
+}
+

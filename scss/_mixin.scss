@@ -1,0 +1,52 @@
+/*============================ Стили шрифтов ============================*/
+
+@mixin style_h1 ($fz: 48px, $fw: 900, $lh: 64px) {
+    font-family: "Arial";
+    font-size: $fz;
+    font-weight: $fw;
+    line-height: $lh;
+    color: #ffffff;
+}
+
+@mixin style_small-p ($fz: 14px, $fw: 400, $lh: 20px) {
+    font-family: "Arial";
+    font-size: $fz;
+    font-weight: $fw;
+    line-height: $lh;
+    color: #333333;
+}
+
+@mixin style_h3 ($fz: 24px, $fw: 700, $lh: 24px) {
+    font-family: "Arial";
+    font-size: $fz;
+    font-weight: $fw;
+    line-height: $lh;
+    color: #0093dd;
+}
+
+@mixin style_txt-btn ($fz: 14px, $fw: 700, $lh: 14px) {
+    font-family: "Arial";
+    font-size: $fz;
+    font-weight: $fw;
+    line-height: $lh;
+    color: #ffffff;
+}
+
+@mixin style_btn ($width: 205px, $height: 53px){
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(20, 169, 244);
+    background-color: rgb(20, 169, 244);
+    width: $width;
+    height: $height;
+}
+
+@mixin style_btn-yellow ($width: 268px, $height: 69px){
+    border-style: solid;
+    border-width: 1px;
+    border-color: #fff000;
+    background-color: #fff000;
+    width: $width;
+    height: $height;
+}
+
