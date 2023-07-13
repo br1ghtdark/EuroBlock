@@ -33,20 +33,32 @@
 }
 
 @mixin style_btn ($width: 205px, $height: 53px){
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgb(20, 169, 244);
-    background-color: rgb(20, 169, 244);
+    background-color: #0093dd;
     width: $width;
     height: $height;
+    transition: ease .6s;
+    &:hover {
+        background-color: #333333;
+        border-radius: 15px;
+        transition: ease .6s;
+    }
 }
 
-@mixin style_btn-yellow ($width: 268px, $height: 69px){
-    border-style: solid;
-    border-width: 1px;
-    border-color: #fff000;
+@mixin style_btn-yellow ($width: 268px, $height: 69px, $fz: 19px, $fw: 700, $lh: 19px){
     background-color: #fff000;
     width: $width;
     height: $height;
+    font-family: "Arial";
+    font-size: $fz;
+    font-weight: $fw;
+    line-height: $lh;
+    color: #333333;
+    transition: ease 1s;
+    &:hover {
+        background-color: #333333;
+        color: #ffffff;
+        border-radius: 15px;
+        transition: ease 1s;
+    }
 }
 

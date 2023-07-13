@@ -159,11 +159,6 @@
 
     &__btn {
         @include style_btn-yellow;
-
-        & p {
-            @include style_txt-btn ($fz: 18.6px, $fw: 700, $lh: auto);
-            color: #010101;
-        }
     }
 
     &__txt {
@@ -415,7 +410,7 @@
 
             & span {
                 @include style_txt-btn ($fz: 14px, $fw: 700, $lh: 14px);
-                color: #000000;
+                color: #ffffff;
             }
         }
     }
@@ -699,13 +694,8 @@
         }
 
         &-btn {
-            @include style_btn-yellow ($width: 284px, $height: 56px);
+            @include style_btn-yellow ($width: 284px, $height: 56px, $fz: 14px, $fw: 700, $lh: 14px);
             margin-bottom: 15px;
-
-            & span {
-                @include style_txt-btn ($fz: 14px, $fw: 700, $lh: 14px);
-                color: #000000;
-            }
         }
     }
 }
@@ -997,13 +987,8 @@
         }
 
         &-btn {
-            @include style_btn-yellow ($width: 268px, $height: 69px);
+            @include style_btn-yellow ($width: 251px, $height: 56px, $fz: 14px, $fw: 700, $lh: 14px);
             margin-bottom: 20px;
-
-            & span {
-                @include style_txt-btn ($fz: 14px, $fw: 700, $lh: 14px);
-                color: #010101;
-            }
         }
     }
 }
