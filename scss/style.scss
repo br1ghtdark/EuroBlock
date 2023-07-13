@@ -593,3 +593,548 @@
         }
     }
 }
+
+/* ===============================FREE============================== */
+/* ===============================FREE============================== */
+
+.free {
+    background: 0px 0px / cover no-repeat url("../images/order_background.png");
+    clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0 100%);
+
+    &__inner {
+        padding-top: 150px;
+        padding-bottom: 100px;
+
+        &-title {
+            padding-bottom: 50px;
+            padding-left: 25px;
+            & p {
+                @include style_small-p ($fz: 20px, $fw: 400, $lh: 20px);
+                color: #000000;
+                padding-left: 25px;
+                padding-top: 3px;
+            }
+        }
+
+        &-content {
+            display: flex;
+        }
+    }
+
+    &__title {
+        @include style_h3 ($fz: 44px, $fw: 700, $lh: 44px);
+        color: #000000;
+        position: relative;
+
+        &::before {
+            content: url(/images/bracket-big.png);
+            position: absolute;
+            left: -25px;
+            top: -22px;
+        }
+    }
+
+    &__content {
+
+        &-form {
+            background-color: #0093dd;
+            width: 386px;
+            height: 309px;
+            margin-right: 26px;
+        }
+
+        &-txt {
+            @include style_h3 ($fz: 14px, $fw: 700, $lh: 14px);
+            color: #000000;
+
+            & p {
+                padding-bottom: 10px;
+            }
+
+            & span {
+                @include style_h3 ($fz: 14px, $fw: 700, $lh: 14px);
+            }
+        }
+    }
+
+    &__form {
+
+        &-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 34px 45px 37px 45px;
+
+            & p {
+                @include style_small-p ($fz: 12px, $fw: 400, $lh: 12px);
+                color: #ffffff;
+                max-width: 270px;
+            }
+        }
+
+        &-title {
+            @include style_h3 ($fz: 20px, $fw: 700, $lh: 20px);
+            color: #ffffff;
+            padding-bottom: 7px;
+        }
+
+        &-subtitle {
+            @include style_small-p ($fz: 14px, $fw: 400, $lh: 14px);
+            color: #ffffff;
+            padding-bottom: 25px;
+
+        }
+
+        &-label {
+            padding-bottom: 12px;
+
+        }
+
+        &-input {
+            @include style_small-p ($fz: 14px, $fw: 400, $lh: 16px);
+            padding: 20px;
+            width: 284px;
+            
+        }
+
+        &-btn {
+            @include style_btn-yellow ($width: 284px, $height: 56px);
+            margin-bottom: 15px;
+
+            & span {
+                @include style_txt-btn ($fz: 14px, $fw: 700, $lh: 14px);
+                color: #000000;
+            }
+        }
+    }
+}
+
+/* ===============================ABOUT============================== */
+/* ===============================ABOUT============================== */
+
+.about {
+
+    &__inner {
+        padding-top: 70px;
+        padding-bottom: 130px;
+
+        &-title {
+            @include style_h3 ($fz: 36px, $fw: 700, $lh: 36px);
+            position: relative;
+            color: #000000;
+            padding-left: 25px;
+            padding-bottom: 100px;
+
+            &::before {
+                content: url(/images/bracket.png);
+                position: absolute;
+                left: 0;
+                top: -21px;
+            }
+        }
+
+        &-content {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__content {
+
+        &-item {
+            position: relative;
+            text-align: center;
+            max-width: 156px;
+
+            & h3 {
+                @include style_h3 ($fz: 48px, $fw: 700, $lh: 48px);
+                color: #000000;
+            }
+
+            &::after {
+                content: url(/images/vertical_line-about.png);
+                position: absolute;
+                right: -32%;
+                top: 0;
+            }
+        }
+
+        &-subtitle {
+            @include style_h3 ($fz: 30px, $fw: 700, $lh: 30px);
+        }
+
+        &-txt {
+            @include style_small-p ($fz: 18px, $fw: 400, $lh: 18px);
+            color: #000000;
+        }
+    }
+}
+
+/* ===============================QUESTIONS============================== */
+/* ===============================QUESTIONS============================== */
+
+.questions {
+    background: 
+    0px 0px / cover no-repeat url("../images/questions_background.png");
+    clip-path: polygon(0% 0%, 100% 12.5%, 100% 87.5%, 0 100%);
+
+    &__inner {
+        padding: 200px 0 200px 350px;
+
+        &-title {
+            @include style_h3 ($fz: 48px, $fw: 700, $lh: 48px);
+            color: #333333;
+            padding-bottom: 15px;
+        }
+        &-txt {
+            @include style_small-p ($fz: 20px, $fw: 400, $lh: 20px);
+            padding-bottom: 15px;
+        }
+
+        &-btn {
+            @include style_btn ($width: 337px, $height: 61px);
+
+            & span {
+                @include style_txt-btn ($fz: 18px, $fw: 700, $lh: 18px);
+            }
+        }
+    }
+}
+
+/* ===============================HOUSES============================== */
+/* ===============================HOUSES============================== */
+
+.houses {
+
+    &__inner {
+
+        &-title {
+            @include style_h3 ($fz: 36px, $fw: 700, $lh: 36px);
+            color: #333333;
+            position: relative;
+            padding: 50px 0 80px 25px;
+
+            &::before {
+                content: url(/images/bracket.png);
+                position: absolute;
+                left: 1px;
+                top: 30px;
+            }
+        }
+
+        &-content {
+            display: grid;
+            grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+            gap: 20px;
+            padding-bottom: 50px;
+        }
+    }
+    &__content-item {
+    }
+}
+
+/* ===============================HOW============================== */
+/* ===============================HOW============================== */
+
+.how {
+    background: 
+    0px 0px / cover no-repeat url("../images/how/how_background.png");
+    clip-path: polygon(0% 0%, 100% 12.5%, 100% 87.5%, 0 100%);
+
+    &__inner {
+        padding-top: 150px;
+
+        &-title {
+            @include style_h3 ($fz: 36px, $fw: 700, $lh: 36px);
+            position: relative;
+            color: #ffffff;
+            padding: 0 0 100px 25px;
+            &::before {
+                content: url(/images/bracket_yellow.png);
+                position: absolute;
+                left: 1px;
+                top: -20px;
+            }
+        }
+
+        &-content {
+            position: relative;
+            display: grid;
+            grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+            gap: 90px 60px;
+            padding-bottom: 200px;
+        }
+    }
+
+    &__content-item {
+        display: flex;
+        text-align: left;
+        align-items: end;
+
+        &:nth-child(1) {
+            &  .how__item-title {
+                &::after {
+                    content: url(/images/how/how_call.png);
+                    position: absolute;
+                    right: 20px;
+                    top: -55px;
+                    z-index: -20;
+                }
+            }
+            & .how__item-txt {
+                &::after {
+                    content: url(/images/how/how_arrow-1.png);
+                    position: absolute;
+                    top: -60px;
+                    right: -30px;
+                }
+            }
+        }
+
+        &:nth-child(2) {
+            &  .how__item-title {
+                &::after {
+                    content: url(/images/how/how_pen.png);
+                    position: absolute;
+                    right: 20px;
+                    top: -55px;
+                    z-index: -20;
+                }
+            }
+            & .how__item-txt {
+                position: absolute;
+                width: 150px;
+                left: 436px;
+                top: 50px;
+
+                &::after {
+                    content: url(/images/how/how_arrow-1.png);
+                    position: absolute;
+                    top: -60px;
+                    right: -30px;
+                }
+            }
+        }
+
+        &:nth-child(3) {
+            &  .how__item-title {
+                &::after {
+                    content: url(/images/how/how_message.png);
+                    position: absolute;
+                    right: 20px;
+                    top: -55px;
+                    z-index: -20;
+                }
+            }
+            & .how__item-txt {
+                &::after {
+                    content: url(/images/how/how_arrow-3.png);
+                    position: absolute;
+                    top: 30px;
+                    right: -30px;
+                }
+            }
+        }
+
+        &:nth-child(5) {
+            &  .how__item-title {
+                &::after {
+                    content: url(/images/how/how_car.png);
+                    position: absolute;
+                    right: 20px;
+                    top: -55px;
+                    z-index: -20;
+                }
+            }
+            & .how__item-txt {
+                &::after {
+                    content: url(/images/how/how_arrow-5.png);
+                    position: absolute;
+                    top: -65px;
+                    right: 300px;
+                }
+            }
+            
+        }
+        &:nth-child(6) {
+            &  .how__item-title {
+                &::after {
+                    content: url(/images/how/how_exit.png);
+                    position: absolute;
+                    right: 20px;
+                    top: -55px;
+                    z-index: -20;
+                }
+            }
+            & .how__item-txt {
+                &::after {
+                    content: url(/images/how/how_arrow-4.png);
+                    position: absolute;
+                    top: 65px;
+                    right: 260px;
+                }
+            }
+        }
+    }
+
+    &__item {
+
+        &-title {
+            @include style_small-p ($fz: 100px, $fw: 400, $lh: 100px);
+            position: relative;
+            color: #fff000;
+            padding-right: 20px;
+        }
+
+        &-txt {
+            @include style_small-p ($fz: 16px, $fw: 400, $lh: 16px);
+            position: relative;
+            color: #ffffff;
+            padding-bottom: 12px;
+            width: 150px;
+            
+        }
+
+        &-btn {
+            @include style_btn-yellow ($width: 268px, $height: 69px);
+            margin-bottom: 20px;
+
+            & span {
+                @include style_txt-btn ($fz: 14px, $fw: 700, $lh: 14px);
+                color: #010101;
+            }
+        }
+    }
+}
+
+/* ===============================REVIEWS============================== */
+/* ===============================REVIEWS============================== */
+
+.reviews {
+    margin-top: -115px;
+    background-color: #ededed;
+    clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+
+    &__inner {
+        position: relative;
+        padding-bottom: 100px;
+
+        &-title {
+            @include style_h3 ($fz: 36px, $fw: 700, $lh: 36px);
+            position: relative;
+            color: #333333;
+            padding: 180px 0 100px 25px;
+
+            &::before {
+                content: url(/images/bracket.png);
+                position: absolute;
+                top: 160px;
+                left: 1px;
+            }
+        }
+    }
+
+    &__slider {
+        max-width: 776px;
+
+        &-item {
+            display: flex;
+        }
+    }
+
+    &__item {
+
+        &-img {
+            margin-right: 20px;
+        }
+
+        &-content {
+        }
+    }
+
+    &__content {
+        
+        &-txt {
+            @include style_small-p ($fz: 14px, $fw: 400, $lh: 20px);
+            font-style: italic;
+            padding-bottom: 20px;
+        }
+
+        &-name {
+            @include style_h3 ($fz: 16px, $fw: 700, $lh: 24px);
+            color: #333333;
+        }
+    }
+
+    &__btn {
+        &-prev {
+            position: absolute;
+            top: calc(65% - 25.5px);
+
+        }
+        &-next {
+            position: absolute;
+            top: calc(65% - 25.5px);
+            right: 0;
+            
+        }
+    }
+}
+
+/* ===============================FOOTER============================== */
+/* ===============================FOOTER============================== */
+
+.footer {
+    background-color: #ffffff;
+
+    &__inner {
+        display: flex;
+        height: 137px;
+        align-items: center;
+
+        &-logo {
+            margin-right: 33px;
+        }
+
+        &-txt {
+            margin-right: 132px;
+        }
+
+        &-content {
+            margin-right: 40px;
+        }
+    }
+
+    &__txt {
+        @include style_small-p ($fz: 14px, $fw: 400, $lh: 20px);
+    }
+
+    &__content {
+
+        &-number {
+            @include style_h3 ($fz: 24px, $fw: 700, $lh: 24px);
+            margin-bottom: 8px;
+        }
+
+        &-clock {
+            @include style_small-p ($fz: 14px, $fw: 400, $lh: 20px);
+            padding-left: 7px;
+        }
+    }
+
+    &__btn {
+        @include style_btn;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &-img {
+            margin-right: 8px;
+        }
+
+        &-txt {
+            @include style_txt-btn;
+        }
+    }
+}

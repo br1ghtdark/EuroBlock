@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="scss/_reset.scss">
-    <link rel="stylesheet" href="scss/_fonts.scss">
-    <link rel="stylesheet" href="css/style.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/scss/_reset.scss">
+    <link rel="stylesheet" href="/scss/_fonts.scss">
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="/css/style.min.css">
     <title>EuroBlock</title>
 </head>
 <body>
@@ -44,405 +44,724 @@
                 </div>
             </div>
         </header>
-        <section class="sale">
-            <div class="container">
-                <div class="sale__inner">
-                    <div class="sale__inner-title">
-                        <h1 class="sale__title">
-                            ПРОДАЖА КАЧЕСТВЕННОГО ГАЗОБЕТОНА <br> ОТ ПРОИЗВОДИТЕЛЯ
-                        </h1>
-                        <div class="sale__title-img">
-                            <img src="../images/head_title-img.png" alt="">
+        <main>
+            <section class="sale">
+                <div class="container">
+                    <div class="sale__inner">
+                        <div class="sale__inner-title">
+                            <h1 class="sale__title">
+                                ПРОДАЖА КАЧЕСТВЕННОГО ГАЗОБЕТОНА <br> ОТ ПРОИЗВОДИТЕЛЯ
+                            </h1>
+                            <div class="sale__title-img">
+                                <img src="../images/head_title-img.png" alt="">
+                            </div>
+                        </div>
+                        <div class="sale__inner-meta">
+                            <p class="sale__meta">Доставка <br> в день обращения</p>
+                            <p class="sale__meta">Блоки, <br> перегородки, u-block</p>
+                            <p class="sale__meta">
+                                Инструмент стоимостью 10 000 руб. 
+                                <br><span>БЕСПЛАТНО</span>
+                            </p>
+                        </div>
+                        <div class="sale__inner-more">
+                            <div class="sale__more">
+                                <div class="sale__more-img">
+                                    <img src="../images/tool.png" alt="tool">
+                                </div>
+                                <div class="sale__more-txt">
+                                    ПОЛУЧИТЕ КОМПЛЕКТ ИНСТРУМЕНТОВ ДЛЯ ГАЗОБЕТОНА
+                                </div>
+                                <div class="sale__more-title">
+                                    БЕСПЛАТНО!
+                                </div>
+                            </div>
+                            <div class="sale__more-btn">
+                                <button class="sale__btn">
+                                    <p>ПОЛУЧИТЬ СПЕЦ. ЦЕНУ!</p>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="sale__inner-txt">
+                            <p class="sale__txt">ГАЗОБЛОКИ:</p>
+                            <p class="sale__txt">D300 B2.0</p>
+                            <p class="sale__txt">D400 B2.5</p>
+                            <p class="sale__txt">D500 B3.5</p>
+                            <p class="sale__txt">D600 B3.5</p>
                         </div>
                     </div>
-                    <div class="sale__inner-meta">
-                        <p class="sale__meta">Доставка <br> в день обращения</p>
-                        <p class="sale__meta">Блоки, <br> перегородки, u-block</p>
-                        <p class="sale__meta">
-                            Инструмент стоимостью 10 000 руб. 
-                            <br><span>БЕСПЛАТНО</span>
+                </div>
+            </section>
+            <section class="blocks">
+                <div class="container">
+                    <div class="blocks__inner">
+                        <div class="blocks__inner-item">
+                            <div class="blocks__inner-title">
+                                <h2>СТЕНОВОЙ</h2>
+                            </div>
+                            <div class="blocks__inner-img">
+                                <img src="/images/stenovoj.png">
+                            </div>
+                            <div class="blocks__inner-btn">
+                                <button class="blocks__btn">
+                                    <p>СПЕЦ. ПРЕДЛОЖЕНИЕ</p>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="blocks__inner-item">
+                            <div class="blocks__inner-title">
+                                <h2>ПЕРЕГОРОДКА</h2>
+                            </div>
+                            <div class="blocks__inner-img">
+                                <img src="/images/peregorodka.png">
+                            </div>
+                            <div class="blocks__inner-btn">
+                                <button class="blocks__btn">
+                                    <p>СПЕЦ. ПРЕДЛОЖЕНИЕ</p>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="blocks__inner-item">
+                            <div class="blocks__inner-title">
+                                <h2>U БЛОК</h2>
+                            </div>
+                            <div class="blocks__inner-img">
+                                <img src="/images/u-block.png">
+                            </div>
+                            <div class="blocks__inner-btn">
+                                <button class="blocks__btn">
+                                    <p>СПЕЦ. ПРЕДЛОЖЕНИЕ</p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="size">
+                <div class="container">
+                    <div class="size__inner">
+                        <div class="size__inner-title">
+                            <h2>РАЗМЕРЫ ГАЗОБЛОКОВ</h2>
+                        </div>
+                        <table class="size__inner-table">
+                            <thead>
+                                <tr>
+                                    <th>Название</th>
+                                    <th>Штук в кубе</th>
+                                    <th>Объем блока м³</th>
+                                    <th>Штук на паллете</th>
+                                    <th>На паллете м²</th>
+                                    <th>Размер</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>625x250x80</td>
+                                    <td>1.8м³</td>
+                                    <td>144</td>
+                                    <td>0.012</td>
+                                    <td>80</td>
+                                    <td>перегородка</td>
+                                </tr>
+                                <tr>
+                                    <td>625х250х85</td>
+                                    <td>1.7м³</td>
+                                    <td>128</td>
+                                    <td>0.013</td>
+                                    <td>75.29</td>
+                                    <td>перегородка</td>
+                                </tr>
+                                <tr>
+                                    <td>625x250x100</td>
+                                    <td>1.875м³</td>
+                                    <td>120</td>
+                                    <td>0.016</td>
+                                    <td>64</td>
+                                    <td>перегородка</td>
+                                </tr>
+                                <tr>
+                                    <td>625х250х150</td>
+                                    <td>1.875м³</td>
+                                    <td>80</td>
+                                    <td>0.023</td>
+                                    <td>42.66</td>
+                                    <td>стеновой</td>
+                                </tr>
+                                <tr>
+                                    <td>625x250x200</td>
+                                    <td>2м³</td>
+                                    <td>64</td>
+                                    <td>0.031</td>
+                                    <td>32</td>
+                                    <td>стеновой</td>
+                                </tr>
+                                <tr>
+                                    <td>625х250х250</td>
+                                    <td>1.875м³</td>
+                                    <td>48</td>
+                                    <td>0.039</td>
+                                    <td>25.6</td>
+                                    <td>стеновой</td>
+                                </tr>
+                                <tr>
+                                    <td>625x250x300</td>
+                                    <td>1.875м³</td>
+                                    <td>40</td>
+                                    <td>0.047</td>
+                                    <td>21.33</td>
+                                    <td>стеновой</td>
+                                </tr>
+                                <tr>
+                                    <td>625х250х375</td>
+                                    <td>1.875м³</td>
+                                    <td>32</td>
+                                    <td>0.059</td>
+                                    <td>17.06</td>
+                                    <td>стеновой</td>
+                                </tr>
+                                <tr>
+                                    <td>625x250x400</td>
+                                    <td>2м³</td>
+                                    <td>32</td>
+                                    <td>0.063</td>
+                                    <td>16</td>
+                                    <td>стеновой</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+            <section class="services">
+                <div class="container">
+                    <div class="services__inner">
+                        <div class="services__delivery">
+                            <div class="services__delivery-title">
+                                <h2>ДОСТАВКА БЛОКОВ</h2>
+                            </div>
+                            <div class="services__delivery-content">
+                                <div class="services__delivery-txt">
+                                    <div class="services__cont">
+                                        <h3 class="services__subtitle">
+                                            Услуга доставка
+                                        </h3>
+                                        <p class="services__txt">
+                                            Доставка блоков осуществляется 
+                                            длинномером 20 тн, по желанию имеются 20тн манипуляторы
+                                        </p>
+                                        <p class="services__subtxt">
+                                            Заказ манипулятора осуществляется 
+                                            через менеджера минимум за 2 дня до даты поставки
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="services__delivery-img">
+                                    <img src="/images/delivery.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services__unload">
+                            <div class="services__unload-title">
+                                <h2>РАЗГРУЗКА БЛОКОВ</h2>
+                            </div>
+                            <div class="services__unload-content">
+                                <div class="services__unload-img">
+                                    <img src="/images/manimulator_car.png" alt="">
+                                </div>
+                                <div class="services__unload-txt">
+                                    <div class="services__cont">
+                                        <h3 class="services__subtitle">
+                                            Услуга разгрузки
+                                        </h3>
+                                        <p class="services__txt">
+                                            Разгрузка осуществляется краном - манипулятором, 
+                                            возможен довоз продукции при неудобном подъезде
+                                        </p>
+                                        <p class="services__subtxt">
+                                            Заказ манипулятора осуществляется 
+                                            через менеджера минимум за 2 дня до даты поставки
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__unload-btncont">
+                                <button class="services__unload-btn">
+                                    <span>УЗНАТЬ СТОИМОСТЬ СО СКИДКОЙ</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="tech">
+                <div class="container">
+                    <div class="tech__inner">
+                        <h2 class="tech__inner-title">
+                            ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ
+                        </h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Объемная плотность, кг/м³</th>
+                                    <th>D-300</th>
+                                    <th>D-400</th>
+                                    <th>D-500</th>
+                                    <th>D-600</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Класс по прочности на сжатие</td>
+                                    <td>B - 1.5</td>
+                                    <td>B - 2.0</td>
+                                    <td>B - 2.5</td>
+                                    <td>B - 3.5</td>
+                                </tr>
+                                <tr>
+                                    <td>Коэффициент теплопроводности в сухом состоянии, l, Вт/(м·°С)</td>
+                                    <td>0.096</td>
+                                    <td>0.096</td>
+                                    <td>0.12</td>
+                                    <td>0.16</td>
+                                </tr>
+                                <tr>
+                                    <td>Коэффициент теплопроводности при влажности 4%, l, Вт/(м·°С)</td>
+                                    <td>0.113</td>
+                                    <td>0.113</td>
+                                    <td>0.141</td>
+                                    <td>0.16</td>
+                                </tr>
+                                <tr>
+                                    <td>Коэффициент теплопроводности при влажности 5%, l, Вт/(м·°С)</td>
+                                    <td>0.117</td>
+                                    <td>0.117</td>
+                                    <td>0.147</td>
+                                    <td>0.183</td>
+                                </tr>
+                                <tr>
+                                    <td>Усадка при высыхании, не более, мм/м</td>
+                                    <td>0.3</td>
+                                    <td>0.3</td>
+                                    <td>0.3</td>
+                                    <td>0.3</td>
+                                </tr>
+                                <tr>
+                                    <td>Марка по морозостойкости</td>
+                                    <td>F-100</td>
+                                    <td>F-100</td>
+                                    <td>F-100</td>
+                                    <td>F-100</td>
+                                </tr>
+                                <tr>
+                                    <td>Коэффициент паропроницаемости, µ мг/м·ч·Па</td>
+                                    <td>0.23</td>
+                                    <td>0.23</td>
+                                    <td>0.2</td>
+                                    <td>0.16</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+            <section class="choice">
+                <div class="container">
+                    <div class="choice__inner">
+                        <div class="choice__inner-title">
+                            ПОЧЕМУ НАС ВЫБИРАЮТ КЛИЕНТЫ?
+                        </div>
+                        <div class="choice__inner-content">
+                            <div class="choice__content-item">
+                                <div class="choice__item-img">
+                                    <img src="/images/icons/choice_like.png">
+                                </div>
+                                <h3 class="choice__item-title">
+                                    НИЗКАЯ <br> СТОИМОСТЬ
+                                </h3>
+                                <P class="choice__item-txt">
+                                    У нас нет наценки на блоки. Вы получаете 
+                                    блоки напрямую от пр-ля. Мы готовы предложить 
+                                    Вам скидку и цену ниже конкурентов в зависимости 
+                                    от Ваших объемов
+                                </P>
+                            </div>
+                            <div class="choice__content-item">
+                                <div class="choice__item-img">
+                                    <img src="/images/icons/choice_tech.png">
+                                </div>
+                                <h3 class="choice__item-title">
+                                    БЕСПЛАТНЫЕ <br> КОНСУЛЬТАЦИИ
+                                </h3>
+                                <p class="choice__item-txt">
+                                    Мы рады поделиться своим опытом и знаниями
+                                    с клиентами. Вы всегда можете получить
+                                    консультацию, как нужно правильно строить дом
+                                </p>
+                            </div>
+                            <div class="choice__content-item">
+                                <div class="choice__item-img">
+                                    <img src="/images/icons/choice_tool.png">
+                                </div>
+                                <div class="choice__item-title">
+                                    КОМПЛЕКТ <br> ИНСТРУМЕНТОВ
+                                </div>
+                                <p class="choice__item-txt">
+                                    Вы бесплатно получаете
+                                    комплект инструментов для газобетона. Это
+                                    рубанок, кельма, каретка,
+                                    шлифовальная доска, угольник, пила
+                                </p>
+                            </div>
+                            <div class="choice__content-item">
+                                <div class="choice__item-img">
+                                    <img src="/images/icons/choice_loop.png">
+                                </div>
+                                <div class="choice__item-title">
+                                    КОНТРОЛЬ <br> БРАКА
+                                </div>
+                                <p class="choice__item-txt">
+                                    Мы поменяем вам блоки или вернем вам часть
+                                    стоимости за них, если при 
+                                    доставке побились блоки
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="certificate">
+                <div class="container">
+                    <div class="certificate__inner">
+                        <h2 class="certificate__inner-title">
+                            СЕРТИФИКАТЫ
+                        </h2>
+                        <div class="certificate__inner-content">
+                            <img src="/images/certificate-1.png">
+                            <img src="/images/certificate-2.png">
+                            <img src="/images/certificate-3.png">
+                            <img src="/images/certificate-4.png">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="free">
+                <div class="container">
+                    <div class="free__inner">
+                        <div class="free__inner-title">
+                            <h2 class="free__title">
+                                ЗАКАЖИТЕ <br> БЕСПЛАТНЫЙ РАСЧЕТ
+                            </h2>
+                            <p>стоимости постройки дома из газобетонных блоков</p>
+                        </div>
+                        <div class="free__inner-content">
+                            <div class="free__content-form">
+                                <div class="free__form-container">
+                                    <div class="free__form-title">
+                                        ВВЕДИТЕ НОМЕР ТЕЛЕФОНА
+                                    </div>
+                                    <div class="free__form-subtitle">
+                                        И ПОЛУЧИТЕ КОМПЛЕКТ ИНСТРУМЕНТОВ 
+                                        ДЛЯ ГАЗОБЕТОНА БЕСПЛАТНО!
+                                    </div>
+                                    <label class="free__form-label" >
+                                        <input class="free__form-input" placeholder="Ваш телефон" type="tel">
+                                    </label>
+                                    <button class="free__form-btn">
+                                        <span>
+                                            ПОЛУЧИТЬ КОМПЛЕКТ В ПОДАРОК
+                                        </span>
+                                    </button>
+                                    <p>Ваши контактные данные в безопасности 
+                                        и не будут переданы третьим лицам
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="free__content-txt">
+                                <p><span>+</span> Цена за куб от 400 руб.</p>
+                                <p><span>+</span> Бесплатный комплект инструментов.</p>
+                                <p><span>+</span> Скидка до 5% при больших объемах.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="about">
+                <div class="container">
+                    <div class="about__inner">
+                        <h2 class="about__inner-title">О НАС В ЦИФРАХ</h2>
+                        <div class="about__inner-content">
+                            <div class="about__content-item">
+                                <h3>7</h3>
+                                <p class="about__content-subtitle">
+                                    лет
+                                </p>
+                                <p class="about__content-txt">
+                                    Опыт работы в производстве
+                                    газобетонных блоков
+                                </p>
+                            </div>
+                            <div class="about__content-item">
+                                <h3>20000</h3>
+                                <p class="about__content-subtitle">
+                                    м3
+                                </p>
+                                <p class="about__content-txt">
+                                    Произведено газобетонных блоков
+                                </p>
+                            </div>
+                            <div class="about__content-item">
+                                <h3>1220</h3>
+                                <p class="about__content-subtitle">
+                                    домов
+                                </p>
+                                <p class="about__content-txt">
+                                    Построено с помощью наших блоков
+                                </p>
+                            </div>
+                            <div class="about__content-item">
+                                <h3>90%</h3>
+                                <p class="about__content-subtitle">
+                                    клиентов
+                                </p>
+                                <p class="about__content-txt">
+                                    Обращается к нам повторно
+                                    или рекомендуют нас своим знакомым
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="questions">
+                <div class="container">
+                    <div class="questions__inner">
+                        <h2 class="questions__inner-title">
+                            ОСТАЛИСЬ ВОПРОСЫ?
+                        </h2>
+                        <p class="questions__inner-txt">
+                            Проконсультируйтесь со специалистом
+                        </p>
+                        <button class="questions__inner-btn">
+                            <span>ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section class="houses">
+                <div class="container">
+                    <div class="houses__inner">
+                        <h2 class="houses__inner-title">
+                            ДОМА ПОСТРОЕННЫЕ ИЗ НАШЕГО МАТЕРИАЛА
+                        </h2>
+                        <div class="houses__inner-content">
+                            <div class="houses__content-item">
+                                <img src="/images/home-1.png">
+                            </div>
+                            <div class="houses__content-item">
+                                <img src="/images/home-2.png">
+                            </div>
+                            <div class="houses__content-item">
+                                <img src="/images/home-3.png">
+                            </div>
+                            <div class="houses__content-item">
+                                <img src="/images/home-4.png">
+                            </div>
+                            <div class="houses__content-item">
+                                <img src="/images/home-5.png">
+                            </div>
+                            <div class="houses__content-item">
+                                <img src="/images/home-5.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="how">
+                <div class="container">
+                    <div class="how__inner">
+                        <h2 class="how__inner-title">
+                            КАК МЫ РАБОТАЕМ?
+                        </h2>
+                        <div class="how__inner-content">
+                            <div class="how__content-item">
+                                <p class="how__item-title">1.</p>
+                                <p class="how__item-txt">
+                                    Вы оставляете заявку на сайте 
+                                    или звоните нам по телефону
+                                </p>
+                            </div>
+                            <div class="how__content-item">
+                                <p class="how__item-title">2.</p>
+                                <p class="how__item-txt">
+                                    Делаем бесплатный расчет количества 
+                                    бетонных блоков на основании 
+                                    Вашего проекта или рисунка дома
+                                </p>
+                            </div>
+                            <div class="how__content-item">
+                                <p class="how__item-title">3.</p>
+                                <p class="how__item-txt">
+                                    Обговариваем с Вами сроки поставки
+                                </p>
+                            </div>
+                            <div class="how__content-item">
+                                <div class="how__btn">
+                                    <button class="how__item-btn">
+                                        <span>ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="how__content-item">
+                                <p class="how__item-title">5.</p>
+                                <p class="how__item-txt">
+                                    Мы доставляем Ваш блок на объект строительства
+                                </p>
+                            </div>
+                            <div class="how__content-item">
+                                <p class="how__item-title">4.</p>
+                                <p class="how__item-txt">
+                                    Мы доставляем Ваш блок на 
+                                    объект строительства
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="reviews">
+                <div class="container">
+                    <div class="reviews__inner">
+                        <h2 class="reviews__inner-title">
+                            ОТЗЫВЫ НАШИХ КЛИЕНТОВ
+                        </h2>
+                        <div class="swiper reviews__slider">
+                            <div class="swiper-wrapper">
+                                <div class="reviews__slider-item swiper-slide">
+                                    <div class="reviews__item-img">
+                                        <img src="/images/reviews_avatar.jpg">
+                                    </div>
+                                    <div class="reviews__item-content">
+                                        <div class="reviews__content-txt">
+                                            Дом строили в прошлом году. 
+                                            Выбрали газобетон, так как он 
+                                            устойчив к пожарам, обладает шумо 
+                                            и теплоизоляцией, экономичен. 
+                                            Отделочные работы закончить еще 
+                                            не успели, то есть всю осень и 
+                                            зиму дом стоял без наружной отделки. 
+                                            Сейчас внутри запах извести, 
+                                            никак от него не избавиться, а 
+                                            снаружи в некоторых местах крошатся 
+                                            стены. Читала бы Ваше сообщение 
+                                            раньше, никогда не согласилась бы 
+                                            использовать этот материал, а так 
+                                            теперь не знаю, что делать.
+                                        </div>
+                                        <div class="reviews__content-name">
+                                            Николай, Краснодар
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reviews__slider-item swiper-slide">
+                                    <div class="reviews__item-img">
+                                        <img src="/images/reviews_avatar.jpg" alt="">
+                                    </div>
+                                    <div class="reviews__item-content">
+                                        <div class="reviews__content-txt">
+                                            Дом строили в прошлом году. 
+                                            Выбрали газобетон, так как он 
+                                            устойчив к пожарам, обладает шумо 
+                                            и теплоизоляцией, экономичен. 
+                                            Отделочные работы закончить еще 
+                                            не успели, то есть всю осень и 
+                                            зиму дом стоял без наружной отделки. 
+                                            Сейчас внутри запах извести, 
+                                            никак от него не избавиться, а 
+                                            снаружи в некоторых местах крошатся 
+                                            стены. Читала бы Ваше сообщение 
+                                            раньше, никогда не согласилась бы 
+                                            использовать этот материал, а так 
+                                            теперь не знаю, что делать.
+                                        </div>
+                                        <div class="reviews__content-name">
+                                            Николай, Краснодар
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reviews__slider-item swiper-slide">
+                                    <div class="reviews__item-img">
+                                        <img src="/images/reviews_avatar.jpg" alt="">
+                                    </div>
+                                    <div class="reviews__item-content">
+                                        <div class="reviews__content-txt">
+                                            Дом строили в прошлом году. 
+                                            Выбрали газобетон, так как он 
+                                            устойчив к пожарам, обладает шумо 
+                                            и теплоизоляцией, экономичен. 
+                                            Отделочные работы закончить еще 
+                                            не успели, то есть всю осень и 
+                                            зиму дом стоял без наружной отделки. 
+                                            Сейчас внутри запах извести, 
+                                            никак от него не избавиться, а 
+                                            снаружи в некоторых местах крошатся 
+                                            стены. Читала бы Ваше сообщение 
+                                            раньше, никогда не согласилась бы 
+                                            использовать этот материал, а так 
+                                            теперь не знаю, что делать.
+                                        </div>
+                                        <div class="reviews__content-name">
+                                            Николай, Краснодар
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="reviews__btn-prev">
+                            <img src="/images/slider_arrow-left.png">
+                        </button>
+                        <button class="reviews__btn-next">
+                            <img src="/images/slider_arrow-right.png">
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__inner-logo">
+                        <img src="/images/logo.png" alt="logo">
+                    </div>
+                    <div class="footer__inner-txt">
+                        <p class="footer__txt">
+                            Офис продаж <br> AeroStone в Москве
                         </p>
                     </div>
-                    <div class="sale__inner-more">
-                        <div class="sale__more">
-                            <div class="sale__more-img">
-                                <img src="../images/tool.png" alt="tool">
-                            </div>
-                            <div class="sale__more-txt">
-                                ПОЛУЧИТЕ КОМПЛЕКТ ИНСТРУМЕНТОВ ДЛЯ ГАЗОБЕТОНА
-                            </div>
-                            <div class="sale__more-title">
-                                БЕСПЛАТНО!
-                            </div>
-                        </div>
-                        <div class="sale__more-btn">
-                            <button class="sale__btn">
-                                <p>ПОЛУЧИТЬ СПЕЦ. ЦЕНУ!</p>
-                            </button>
-                        </div>
+                    <div class="footer__inner-content">
+                        <h3 class="footer__content-number">
+                            +7 (812) 425-60-75
+                        </h3>
+                        <p class="footer__content-clock">
+                            Время работы: с 9:00 до 21:00
+                        </p>
                     </div>
-                    <div class="sale__inner-txt">
-                        <p class="sale__txt">ГАЗОБЛОКИ:</p>
-                        <p class="sale__txt">D300 B2.0</p>
-                        <p class="sale__txt">D400 B2.5</p>
-                        <p class="sale__txt">D500 B3.5</p>
-                        <p class="sale__txt">D600 B3.5</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="blocks">
-            <div class="container">
-                <div class="blocks__inner">
-                    <div class="blocks__inner-item">
-                        <div class="blocks__inner-title">
-                            <h2>СТЕНОВОЙ</h2>
-                        </div>
-                        <div class="blocks__inner-img">
-                            <img src="/images/stenovoj.png">
-                        </div>
-                        <div class="blocks__inner-btn">
-                            <button class="blocks__btn">
-                                <p>СПЕЦ. ПРЕДЛОЖЕНИЕ</p>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="blocks__inner-item">
-                        <div class="blocks__inner-title">
-                            <h2>ПЕРЕГОРОДКА</h2>
-                        </div>
-                        <div class="blocks__inner-img">
-                            <img src="/images/peregorodka.png">
-                        </div>
-                        <div class="blocks__inner-btn">
-                            <button class="blocks__btn">
-                                <p>СПЕЦ. ПРЕДЛОЖЕНИЕ</p>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="blocks__inner-item">
-                        <div class="blocks__inner-title">
-                            <h2>U БЛОК</h2>
-                        </div>
-                        <div class="blocks__inner-img">
-                            <img src="/images/u-block.png">
-                        </div>
-                        <div class="blocks__inner-btn">
-                            <button class="blocks__btn">
-                                <p>СПЕЦ. ПРЕДЛОЖЕНИЕ</p>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="size">
-            <div class="container">
-                <div class="size__inner">
-                    <div class="size__inner-title">
-                        <h2>РАЗМЕРЫ ГАЗОБЛОКОВ</h2>
-                    </div>
-                    <table class="size__inner-table">
-                        <thead>
-                            <tr>
-                                <th>Название</th>
-                                <th>Штук в кубе</th>
-                                <th>Объем блока м³</th>
-                                <th>Штук на паллете</th>
-                                <th>На паллете м²</th>
-                                <th>Размер</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>625x250x80</td>
-                                <td>1.8м³</td>
-                                <td>144</td>
-                                <td>0.012</td>
-                                <td>80</td>
-                                <td>перегородка</td>
-                            </tr>
-                            <tr>
-                                <td>625х250х85</td>
-                                <td>1.7м³</td>
-                                <td>128</td>
-                                <td>0.013</td>
-                                <td>75.29</td>
-                                <td>перегородка</td>
-                            </tr>
-                            <tr>
-                                <td>625x250x100</td>
-                                <td>1.875м³</td>
-                                <td>120</td>
-                                <td>0.016</td>
-                                <td>64</td>
-                                <td>перегородка</td>
-                            </tr>
-                            <tr>
-                                <td>625х250х150</td>
-                                <td>1.875м³</td>
-                                <td>80</td>
-                                <td>0.023</td>
-                                <td>42.66</td>
-                                <td>стеновой</td>
-                            </tr>
-                            <tr>
-                                <td>625x250x200</td>
-                                <td>2м³</td>
-                                <td>64</td>
-                                <td>0.031</td>
-                                <td>32</td>
-                                <td>стеновой</td>
-                            </tr>
-                            <tr>
-                                <td>625х250х250</td>
-                                <td>1.875м³</td>
-                                <td>48</td>
-                                <td>0.039</td>
-                                <td>25.6</td>
-                                <td>стеновой</td>
-                            </tr>
-                            <tr>
-                                <td>625x250x300</td>
-                                <td>1.875м³</td>
-                                <td>40</td>
-                                <td>0.047</td>
-                                <td>21.33</td>
-                                <td>стеновой</td>
-                            </tr>
-                            <tr>
-                                <td>625х250х375</td>
-                                <td>1.875м³</td>
-                                <td>32</td>
-                                <td>0.059</td>
-                                <td>17.06</td>
-                                <td>стеновой</td>
-                            </tr>
-                            <tr>
-                                <td>625x250x400</td>
-                                <td>2м³</td>
-                                <td>32</td>
-                                <td>0.063</td>
-                                <td>16</td>
-                                <td>стеновой</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </section>
-        <section class="services">
-            <div class="container">
-                <div class="services__inner">
-                    <div class="services__delivery">
-                        <div class="services__delivery-title">
-                            <h2>ДОСТАВКА БЛОКОВ</h2>
-                        </div>
-                        <div class="services__delivery-content">
-                            <div class="services__delivery-txt">
-                                <div class="services__cont">
-                                    <h3 class="services__subtitle">
-                                        Услуга доставка
-                                    </h3>
-                                    <p class="services__txt">
-                                        Доставка блоков осуществляется 
-                                        длинномером 20 тн, по желанию имеются 20тн манипуляторы
-                                    </p>
-                                    <p class="services__subtxt">
-                                        Заказ манипулятора осуществляется 
-                                        через менеджера минимум за 2 дня до даты поставки
-                                    </p>
-                                </div>
+                    <div class="footer__inner-btn">
+                        <button class="footer__btn">
+                            <div class="footer__btn-img">
+                                <img src="/images/icons/call.png" alt="call">
                             </div>
-                            <div class="services__delivery-img">
-                                <img src="/images/delivery.png">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="services__unload">
-                        <div class="services__unload-title">
-                            <h2>РАЗГРУЗКА БЛОКОВ</h2>
-                        </div>
-                        <div class="services__unload-content">
-                            <div class="services__unload-img">
-                                <img src="/images/manimulator_car.png" alt="">
-                            </div>
-                            <div class="services__unload-txt">
-                                <div class="services__cont">
-                                    <h3 class="services__subtitle">
-                                        Услуга разгрузки
-                                    </h3>
-                                    <p class="services__txt">
-                                        Разгрузка осуществляется краном - манипулятором, 
-                                        возможен довоз продукции при неудобном подъезде
-                                    </p>
-                                    <p class="services__subtxt">
-                                        Заказ манипулятора осуществляется 
-                                        через менеджера минимум за 2 дня до даты поставки
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="services__unload-btncont">
-                            <button class="services__unload-btn">
-                                <span>УЗНАТЬ СТОИМОСТЬ СО СКИДКОЙ</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="tech">
-            <div class="container">
-                <div class="tech__inner">
-                    <h2 class="tech__inner-title">
-                        ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ
-                    </h2>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Объемная плотность, кг/м³</th>
-                                <th>D-300</th>
-                                <th>D-400</th>
-                                <th>D-500</th>
-                                <th>D-600</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Класс по прочности на сжатие</td>
-                                <td>B - 1.5</td>
-                                <td>B - 2.0</td>
-                                <td>B - 2.5</td>
-                                <td>B - 3.5</td>
-                            </tr>
-                            <tr>
-                                <td>Коэффициент теплопроводности в сухом состоянии, l, Вт/(м·°С)</td>
-                                <td>0.096</td>
-                                <td>0.096</td>
-                                <td>0.12</td>
-                                <td>0.16</td>
-                            </tr>
-                            <tr>
-                                <td>Коэффициент теплопроводности при влажности 4%, l, Вт/(м·°С)</td>
-                                <td>0.113</td>
-                                <td>0.113</td>
-                                <td>0.141</td>
-                                <td>0.16</td>
-                            </tr>
-                            <tr>
-                                <td>Коэффициент теплопроводности при влажности 5%, l, Вт/(м·°С)</td>
-                                <td>0.117</td>
-                                <td>0.117</td>
-                                <td>0.147</td>
-                                <td>0.183</td>
-                            </tr>
-                            <tr>
-                                <td>Усадка при высыхании, не более, мм/м</td>
-                                <td>0.3</td>
-                                <td>0.3</td>
-                                <td>0.3</td>
-                                <td>0.3</td>
-                            </tr>
-                            <tr>
-                                <td>Марка по морозостойкости</td>
-                                <td>F-100</td>
-                                <td>F-100</td>
-                                <td>F-100</td>
-                                <td>F-100</td>
-                            </tr>
-                            <tr>
-                                <td>Коэффициент паропроницаемости, µ мг/м·ч·Па</td>
-                                <td>0.23</td>
-                                <td>0.23</td>
-                                <td>0.2</td>
-                                <td>0.16</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </section>
-        <section class="choice">
-            <div class="container">
-                <div class="choice__inner">
-                    <div class="choice__inner-title">
-                        ПОЧЕМУ НАС ВЫБИРАЮТ КЛИЕНТЫ?
-                    </div>
-                    <div class="choice__inner-content">
-                        <div class="choice__content-item">
-                            <div class="choice__item-img">
-                                <img src="/images/icons/choice_like.png">
-                            </div>
-                            <h3 class="choice__item-title">
-                                НИЗКАЯ <br> СТОИМОСТЬ
-                            </h3>
-                            <P class="choice__item-txt">
-                                У нас нет наценки на блоки. Вы получаете 
-                                блоки напрямую от пр-ля. Мы готовы предложить 
-                                Вам скидку и цену ниже конкурентов в зависимости 
-                                от Ваших объемов
-                            </P>
-                        </div>
-                        <div class="choice__content-item">
-                            <div class="choice__item-img">
-                                <img src="/images/icons/choice_tech.png">
-                            </div>
-                            <h3 class="choice__item-title">
-                                БЕСПЛАТНЫЕ <br> КОНСУЛЬТАЦИИ
-                            </h3>
-                            <p class="choice__item-txt">
-                                Мы рады поделиться своим опытом и знаниями
-                                с клиентами. Вы всегда можете получить
-                                консультацию, как нужно правильно строить дом
+                            <p class="footer__btn-txt">
+                                ЗАКАЗАТЬ ЗВОНОК
                             </p>
-                        </div>
-                        <div class="choice__content-item">
-                            <div class="choice__item-img">
-                                <img src="/images/icons/choice_tool.png">
-                            </div>
-                            <div class="choice__item-title">
-                                КОМПЛЕКТ <br> ИНСТРУМЕНТОВ
-                            </div>
-                            <p class="choice__item-txt">
-                                Вы бесплатно получаете
-                                комплект инструментов для газобетона. Это
-                                рубанок, кельма, каретка,
-                                шлифовальная доска, угольник, пила
-                            </p>
-                        </div>
-                        <div class="choice__content-item">
-                            <div class="choice__item-img">
-                                <img src="/images/icons/choice_loop.png">
-                            </div>
-                            <div class="choice__item-title">
-                                КОНТРОЛЬ <br> БРАКА
-                            </div>
-                            <p class="choice__item-txt">
-                                Мы поменяем вам блоки или вернем вам часть
-                                стоимости за них, если при 
-                                доставке побились блоки
-                            </p>
-                        </div>
+                        </button>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="certificate">
-            <div class="container">
-                <div class="certificate__inner">
-                    <h2 class="certificate__inner-title">
-                        СЕРТИФИКАТЫ
-                    </h2>
-                    <div class="certificate__inner-content">
-                        <img src="/images/certificate-1.png">
-                        <img src="/images/certificate-2.png">
-                        <img src="/images/certificate-3.png">
-                        <img src="/images/certificate-4.png">
-                    </div>
-                </div>
-            </div>
-        </section>
+        </footer>
     </div>
+
+    <script src="/js/swiper-bundle.min.js"></script>
+    <script src="/js/main.js"></script>
+
 </body>
 </html>
