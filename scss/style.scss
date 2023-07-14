@@ -262,6 +262,7 @@
 .sale {
     background: linear-gradient(to top, rgba(0, 147, 221, 0.6)), 
     0px 0px / cover no-repeat url("../images/head_background.png");
+    height: 100%;
     clip-path: polygon(0% 0%, 100% 0, 100% 85%, 0 100%);
 
     &__popup {
@@ -331,12 +332,38 @@
         @include style_h1 ($fz: 48px, $fw: 900, $lh: 64px);
         width: 590px;
 
-        &-img {
-            position: absolute;
-            right: -40px;
+        &-price {
+            position: relative;
+            width: 225px;
+            height: 105px;
+            background-color: #fff000;
+            right: 30px;
+
+            &::after {
+                content: url(../images/head_title-img.png);
+                position: absolute;
+                z-index: -10;
+                top: 30px;
+            }
         }
     }
 
+    &__price {
+
+        &-txt {
+            @include style_h3 ($fz: 20px, $fw: 700, $lh: 20px);
+            color: #000000;
+            padding-left: 25px;
+            padding-top: 20px;
+        }
+
+        &-title {
+            @include style_h3 ($fz: 34px, $fw: 700, $lh: 34px);
+            color: #000000;
+            padding-left: 25px;
+        }
+    }
+    
     &__meta {
         position: relative;
         &::before {
@@ -538,6 +565,7 @@
         padding-bottom: 80px;
 
         &-item {
+            padding-top: 50px;
             position: relative;
             display: flex;
             flex-direction: column;
@@ -623,7 +651,7 @@
     & table {
         @include style_small-p ($fz: 16px, $fw: 400, $lh: 20px);
         color: #000000; 
-        width: 960px;
+        width: 100%;
         border-collapse: collapse;
         
         & thead {
@@ -886,7 +914,7 @@
         }
 
         & table {
-            width: 960px;
+            width: 100%;
             border-collapse: collapse;
             text-align: left;
 
@@ -1193,7 +1221,7 @@
 
 .questions {
     background: 
-    0px 0px / cover no-repeat url("../images/questions_background.png");
+    right / cover no-repeat url("../images/questions_background.png");
     clip-path: polygon(0% 0%, 100% 12.5%, 100% 87.5%, 0 100%);
 
     &__popup {
@@ -1218,6 +1246,8 @@
                 justify-content: center;
                 padding: 30px 10px;
                 z-index: 500;
+                transition: ease .6s;
+
             }
     
             &-close {
@@ -1247,6 +1277,8 @@
 
     &__inner {
         padding: 200px 0 200px 350px;
+        transition: ease .6s;
+
 
         &-title {
             @include style_h3 ($fz: 48px, $fw: 700, $lh: 48px);
@@ -1304,9 +1336,9 @@
 /* ===============================HOW============================== */
 
 .how {
-    background: 
-    0px 0px / cover no-repeat url("../images/how/how_background.png");
+    background: 0px 0px / cover no-repeat url("../images/how/how_background.png");
     clip-path: polygon(0% 0%, 100% 12.5%, 100% 87.5%, 0 100%);
+    transition: ease .6s;
 
     &__inner {
         padding-top: 150px;
@@ -1498,6 +1530,7 @@
 
     &__slider {
         max-width: 776px;
+        transition: ease .6s;
 
         &-item {
             display: flex;
@@ -1560,6 +1593,7 @@
 
         &-txt {
             margin-right: 132px;
+            transition: ease .6s;
         }
 
         &-content {
@@ -1596,6 +1630,591 @@
 
         &-txt {
             @include style_txt-btn;
+        }
+    }
+}
+
+
+
+/* ===============================MEDIA============================== */
+/* ===============================MEDIA============================== */
+
+/* ===============================MEDIA============================== */
+/* ===============================960px============================== */
+
+@media (max-width: 960px) {
+
+    .header {
+        &__inner {
+            &-txt {
+                margin-right: 30px;
+            }
+        }
+    }
+
+    .sale {
+        clip-path: polygon(0% 0%, 100% 0, 100% 90%, 0 100%);
+        transition: ease .6s;
+
+    }
+
+    .blocks {
+        &__inner {
+            justify-content: space-around;
+            &-item {
+                &:nth-child(1) {
+                    &::after {
+                        content: '';
+                    }
+                }
+                &:nth-child(2) {
+                    &::after {
+                        content: '';
+                    }
+                }
+            }
+            &-img {
+                & img {
+                    width: 200px;
+                    height: 133px;
+                }
+                &::before {
+                    top: -90px;
+                    left: 8px;
+                }
+            }
+        }
+    }
+
+    .size {
+        clip-path: polygon(0% 0%, 100% 10%, 100% 90%, 0 100%);
+        transition: ease .6s;
+    }
+
+    .services {
+        &__delivery {
+            &-img {
+                right: 90px;
+                top: -30px;
+                & img {
+                    width: 300px;
+                    height: 240px;
+                }
+            }
+        }
+        &__unload {
+            &-content {
+                justify-content: start;
+            }
+            &-img {
+                padding-right: 50px;
+                & img {
+                    width: 350px;
+                    height: 175px;
+                }
+            }
+        }
+    }
+
+    .tech {
+        clip-path: polygon(0% 0%, 100% 10%, 100% 90%, 0 100%);
+        transition: ease .6s;
+    }
+
+    .certificate {
+        clip-path: polygon(0% 0%, 100% 10%, 100% 90%, 0 100%);
+        transition: ease .6s;
+    }
+
+    .choice {
+        clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
+        transition: ease .6s;
+    }
+
+    .certificate {
+        &__inner {
+            &-content {
+                justify-content: space-around;
+                & img {
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    .free {
+        clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0 100%);
+        transition: ease .6s;
+    }
+
+    .about {
+        &__inner {
+            &-content {
+                display: grid;
+                grid-template: 1fr / repeat(4, 1fr);
+            }
+        }
+        &__content {
+            &-item {
+                &::after {
+                    content: '';
+                }
+            }
+        }
+    }
+
+    .questions {
+        clip-path: polygon(0% 0%, 100% 10%, 100% 90%, 0 100%);
+        transition: ease .6s;
+        &__inner {
+            padding-left: 170px;
+            transition: ease .6s;
+        }
+    }
+
+    .houses {
+        &__inner {
+            &-content {
+                grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+                transition: ease .6s;
+            }
+        }
+        &__content {
+            &-item {
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .how {
+        clip-path: polygon(0% 0%, 100% 10%, 100% 90%, 0 100%);
+        transition: ease .6s;
+        &__inner {
+            &-content {
+                gap: 90px 10px;
+            }
+        }
+        &__content {
+            &-item {
+                &:nth-child(2) {
+                    & .how__item-txt {
+                        position: relative;
+                        left: 0;
+                    }
+                }
+                &:nth-child(3) {
+                    & .how__item-txt {
+                        &::after {
+                            right: -5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .reviews {
+        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+        transition: ease .6s;
+        &__content {
+            &-txt {
+                max-width: 500px;
+
+            }
+        }
+        &__slider {
+            max-width: 650px;
+            transition: ease .6s;
+
+        }
+    }
+
+    .footer {
+        &__inner {
+            &-txt {
+                margin-right: 30px;
+                transition: ease .6s;
+            }
+        }
+    }
+}
+
+/* ===============================MEDIA============================== */
+/* ===============================928px============================== */
+
+@media (max-width: 928px) {
+    .houses {
+        &__inner {
+            &-title {
+                &::before {
+                    content: url(/images/bracket-big.png);
+                    top: 20px;
+                }
+            }
+        }
+    }
+}
+
+/* ===============================MEDIA============================== */
+/* ===============================862px============================== */
+
+@media (max-width: 862px) {
+
+    .header {
+        &__inner {
+            justify-content: space-around;
+            &-logo {
+                margin: 0;
+            }
+            &-txt {
+                display: none;
+            }
+            &-content {
+                margin: 0;
+            }
+            &-btn {
+                margin: 0;
+            }
+        }
+    }
+
+    .sale {
+        &__title {
+            font-size: 38px;
+            font-weight: 900;
+            line-height: 54px;
+            width: 520px;
+        }
+        &__inner {
+            &-meta {
+                flex-direction: column;
+            }
+            &-more {
+                flex-direction: column;
+            }
+            &-txt {
+                justify-content: start;
+                margin-left: 30px;
+            }
+        }
+        &__meta {
+            padding-bottom: 15px;
+            &:last-child {
+                padding-bottom: 0;
+            }
+        }
+        &__more {
+            padding-bottom: 30px;
+            &-btn {
+                margin-left: 30px;
+            }
+        }
+    }
+
+    .services {
+        &__delivery {
+            &-content {
+                padding-left: 30px;
+                padding-bottom: 50px;
+                transition: ease .6s;
+                &::after {
+                    display: none;
+                }
+            }
+            &-img {
+                right: 20px;
+                top: 0px;
+            }
+        }
+        &__unload {
+            &-title {
+                padding-bottom: 50px;
+                transition: ease .6s;
+            }
+            &-content {
+                justify-content: end;
+                transition: ease .6s;
+            }
+            &-img {
+                padding-right: 10px;
+                transition: ease .6s;
+            }
+        }
+    }
+
+    .choice {
+        &__inner {
+            &-content {
+                padding-bottom: 150px;
+                display: grid;
+                grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+                gap: 30px 0;
+            }
+        }
+        &__content {
+            &-item {
+            }
+        }
+        &__item {
+            &-img {
+                margin: 0 auto 30px;
+            }
+            &-title {
+                text-align: center;
+            }
+            &-txt {
+                padding-bottom: 0;
+                display: block;
+                margin: 0 auto;
+                width: 250px;
+            }
+        }
+    }
+
+    .certificate {
+        &__inner {
+            &-content {
+                display: grid;
+                grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+                padding-bottom: 70px;
+                & img {
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+
+    .how {
+        &__inner {
+            &-content {
+                grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+            }
+        }
+        &__content {
+            &-item {
+                &:nth-child(1) {
+                    & .how__item-txt {
+                        &::after {
+                            right: -100px;
+                        }
+                    }
+                }
+                &:nth-child(2) {
+                    & .how__item-txt {
+                        &::after {
+                            content: url(/images/how/how_arrow-5.png);
+                            top: 89px;
+                            right: 257px;
+                        }
+                    }
+                }
+                &:nth-child(3) {
+                    & .how__item-txt {
+                        &::after {
+                            right: 30px;
+                            top: 55px;
+                        }
+                    }
+                }
+                &:nth-child(6) {
+                    grid-column: 1;
+                    grid-row: 3;
+                    & .how__item-txt {
+                        &::after {
+                            content: url(/images/how/how_arrow-1.png);
+                            top: -30px;
+                            right: -119px;
+                        }
+                    }
+                }
+                &:nth-child(5) {
+                    grid-column: 2;
+                    & .how__item-txt {
+                        &::after {
+                            top: -95px;
+                            right: 5px;
+                            rotate: 90deg;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    .footer {
+        &__inner {
+            justify-content: space-around;
+            &-logo {
+                margin: 0;
+            }
+            &-txt {
+                display: none;
+            }
+            &-content {
+                margin: 0;
+            }
+            &-btn {
+                margin: 0;
+            }
+        }
+    }
+}
+
+/* ===============================MEDIA============================== */
+/* ===============================768px============================== */
+
+@media (max-width: 768px) {
+    .sale {
+        clip-path: polygon(0% 0%, 100% 0, 100% 95%, 0 100%);
+        transition: ease .6s;
+
+        &__inner {
+            padding-bottom: 70px;
+            transition: ease .6s;
+            &-title {
+                flex-direction: column;
+                padding-bottom: 150px;
+                transition: ease .6s;
+            }
+            &-meta {
+                padding-bottom: 15px;
+            }
+            &-more {
+                padding-bottom: 20px;
+            }
+            &-txt {
+                margin-left: 0;
+            }
+        }
+        &__title {
+            padding-bottom: 10px;
+            transition: ease .6s;
+            &-price {
+            margin-left: 30px;
+            transition: ease .6s;
+            }
+        }
+        &__more {
+            &-btn {
+                margin-left: 0;
+            }
+        }
+    }
+
+    .blocks {
+        &__inner {
+            padding-bottom: 50px;
+        }
+    }
+
+    .size {
+        clip-path: polygon(0% 0%, 100% 5%, 100% 95%, 0 100%);
+        transition: ease .6s;
+
+        &__inner {
+            padding-bottom: 50px;
+            &-title {
+                padding-bottom: 40px;
+                &::before {
+                    bottom: 16px;
+                }
+            }
+            &-table {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    .services {
+        &__delivery {
+            &-img {
+                right: -20px;
+                transition: ease .6s;
+            }
+            &-txt {
+                width: 300px;
+                transition: ease .6s;
+            }
+        }
+        &__subtxt {
+            width: 210px;
+        }
+
+        &__unload {
+            &-content {
+                justify-content: space-around;
+            }
+            &-img {
+                padding-top: 70px;
+                & img {
+                    width: 280px;
+                    height: 140px;
+                }
+            }
+            &-txt {
+                width: 300px;
+            }
+        }
+        &__cont {
+            padding-left: 14px;
+            transition: ease .6s;
+        }
+    }
+
+    .tech {
+        clip-path: polygon(0% 0%, 100% 5%, 100% 95%, 0 100%);
+        transition: ease .6s;
+    }
+
+    .certificate {
+        clip-path: polygon(0% 0%, 100% 5%, 100% 95%, 0 100%);
+        transition: ease .6s;
+    }
+
+    .free {
+        clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0 100%);
+        transition: ease .6s;
+        &__inner {
+            padding-top: 90px;
+            &-content {
+                flex-direction: column;
+            }
+        }
+        &__content {
+            &-form {
+                margin: 0;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .about {
+        &__inner {
+            &-content {
+                grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+                gap: 30px 0;
+            }
+        }
+        &__content {
+            &-item {
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .questions {
+        clip-path: polygon(0% 0%, 100% 5%, 100% 95%, 0 100%);
+        &__inner {
+            padding: 100px 0 100px 170px;
+        }
+    }
+
+    .houses {
+        &__inner {
+            &-title {
+                padding-bottom: 40px;
+            }
         }
     }
 }
