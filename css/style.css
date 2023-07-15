@@ -2580,6 +2580,8 @@ a {
     margin: 0 38px;
   }
 }
+/* ===============================MEDIA============================== */
+/* ===============================649px============================== */
 @media (max-width: 649px) {
   .header__inner {
     display: grid;
@@ -2673,6 +2675,7 @@ a {
   }
   .size table {
     margin-bottom: 5px;
+    margin-left: -8px;
   }
   .size table thead {
     font-size: 12px;
@@ -2889,5 +2892,51 @@ a {
   }
   .footer__content-clock {
     font-size: 12px;
+  }
+}
+/* ===============================MEDIA============================== */
+/* ===============================501px============================== */
+@media (max-width: 501px) {
+  .tech__inner-title::before {
+    top: -7px;
+    -webkit-transition: ease 0.6s;
+    -o-transition: ease 0.6s;
+    transition: ease 0.6s;
+  }
+  .reviews__slider-item {
+    position: relative;
+  }
+  .reviews__slider-item::after {
+    position: absolute;
+    content: url(/images/icons/gif_slide.svg);
+    z-index: 1000;
+    bottom: 10px;
+    left: 10px;
+  }
+  .reviews__btn-prev {
+    display: none;
+  }
+  .reviews__btn-next {
+    display: none;
+  }
+}
+/* ===============================MEDIA============================== */
+/* ===============================434px============================== */
+@media (max-width: 434px) {
+  .reviews__inner-title::before {
+    top: 68px;
+    -webkit-transition: ease 0.6s;
+    -o-transition: ease 0.6s;
+    transition: ease 0.6s;
+  }
+}
+/* ===============================MEDIA============================== */
+/* ===============================391px============================== */
+@media (max-width: 391px) {
+  .header__btn {
+    width: 195px;
+  }
+  .size table thead tr th {
+    padding: 10px 6px;
   }
 }

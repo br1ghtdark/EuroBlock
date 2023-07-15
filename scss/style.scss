@@ -2269,6 +2269,9 @@
     }
 }
 
+/* ===============================MEDIA============================== */
+/* ===============================649px============================== */
+
 @media (max-width: 649px) {
     
     .header {
@@ -2370,6 +2373,7 @@
 
         & table {
             margin-bottom: 5px;
+            margin-left: -8px;
             & thead {
                 font-size: 12px;
             }
@@ -2654,6 +2658,86 @@
         &__content {
             &-clock {
                 font-size: 12px;
+            }
+        }
+    }
+}
+
+/* ===============================MEDIA============================== */
+/* ===============================501px============================== */
+
+@media (max-width: 501px) {
+
+    .tech {
+        &__inner {
+            &-title {
+                &::before {
+                    top: -7px;
+                    transition: ease .6s;
+                }
+            }
+        }
+    }
+
+    .reviews {
+        &__slider {
+            &-item {
+                position: relative;
+                &::after {
+                    position: absolute;
+                    content: url(/images/icons/gif_slide.svg);
+                    z-index: 1000;
+                    bottom: 10px;
+                    left: 10px;
+                }
+            }
+        }
+        &__btn {
+            &-prev {
+                display: none;
+            }
+            &-next {
+                display: none;
+            }
+        }
+    }
+}
+
+/* ===============================MEDIA============================== */
+/* ===============================434px============================== */
+
+@media (max-width: 434px) {
+    .reviews {
+        &__inner {
+            &-title {
+                &::before {
+                    top: 68px;
+                    transition: ease .6s;
+                }
+            }
+        }
+    }
+}
+
+/* ===============================MEDIA============================== */
+/* ===============================391px============================== */
+
+@media (max-width: 391px) {
+
+    .header {
+        &__btn {
+            width: 195px;
+        }
+    }
+
+    .size {
+        & table {
+            & thead {
+                & tr {
+                    & th {
+                        padding: 10px 6px;
+                    }
+                }
             }
         }
     }
